@@ -51,3 +51,11 @@ print("Mayor:",mayor(numeros))
 print("Menor:",menor(numeros))
 print("Suma:",suma(numeros))
 
+def mas_larga(palabras):
+    pos = 0
+    for x in range(len(palabras)):
+        if len(palabras[x]) > len(palabras[pos]):
+            pos = x
+    return palabras[pos]
+palabras = ["Ana", "ab", "CArlos", "Beatris", "h", "juan", "pedro", "sofia", "b"]
+print("palabra con mas caracteres:",mas_larga(palabras))
